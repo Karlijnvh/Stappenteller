@@ -1,7 +1,1 @@
-<xml xmlns="https://developers.google.com/blockly/xml"><block type="pxt-on-start" id="(Q1c*Z]O;nM]-|9G5YOx" x="0" y="0"><statement name="HANDLER"><block type="device_show_leds" id="7cok{sj+5Ki3|oz*(%(6"><field name="LEDS">`
-        . . . . . 
-        . . . . . 
-        . . . . . 
-        . . . . . 
-        . . . . .
-        `</field></block></statement></block><block type="device_forever" id="$~}J-UcYW`b,O)OhX?Hu" x="205" y="0"></block></xml>
+<xml xmlns="https://developers.google.com/blockly/xml"><block type="device_forever" id="-kwNa#DPKcz+IdDvn@Wf" x="233" y="95"><statement name="HANDLER"><block type="basic_show_icon" id="Wi/FkGC_gbhudOzR7q1_"><field name="i">IconNames.Heart</field></block></statement></block></xml>
