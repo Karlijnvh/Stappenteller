@@ -1,3 +1,6 @@
+function erekenVersnelling () {
+	
+}
 let stilstaand = 0
 let aantalStappen = 0
 let toestand = stilstaand
