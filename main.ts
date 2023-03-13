@@ -2,7 +2,7 @@ function berekenVersnelling () {
     x = input.acceleration(Dimension.X)
     y = input.acceleration(Dimension.Y)
     z = input.acceleration(Dimension.Z)
-    versnelling = Math.floor(Math.sqrt(0 + 0))
+    versnelling = Math.floor(Math.sqrt(x * x + y * y + z * z))
 }
 let versnelling = 0
 let z = 0
