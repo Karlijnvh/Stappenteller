@@ -24,5 +24,8 @@ basic.forever(function () {
     }
 })
 basic.forever(function () {
+    erekenVersnelling()
+})
+basic.forever(function () {
     basic.showString("" + (aantalStappen))
 })
