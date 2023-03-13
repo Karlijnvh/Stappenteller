@@ -14,6 +14,10 @@ let toestand = stilstaand
 let onderDrempel = 1024
 let bovenDrempel = 2048
 basic.forever(function () {
+    berekenVersnelling()
+    serial.writeValue("versnelling", versnelling)
+})
+basic.forever(function () {
     if (input.acceleration(Dimension.X) > 2048) {
         let bewegen = 0
         toestand = bewegen
@@ -22,9 +26,6 @@ basic.forever(function () {
             toestand = stilstaand
         }
     }
-})
-basic.forever(function () {
-	
 })
 basic.forever(function () {
     basic.showString("" + (aantalStappen))
