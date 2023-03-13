@@ -12,7 +12,7 @@ let x = 0
 let stilstaand = 0
 let toestand = stilstaand
 let onderDrempel = 1024
-let bovenDrempel = 1048
+let bovenDrempel = 2048
 let aantalStappen = 0
 basic.forever(function () {
     if (toestand == stilstaand && versnelling > bovenDrempel) {
