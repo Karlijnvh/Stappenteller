@@ -24,7 +24,7 @@ basic.forever(function () {
     serial.writeValue("versnelling", versnelling)
 })
 basic.forever(function () {
-    basic.showString("" + (aantalStappen))
+    basic.showNumber(aantalStappen)
 })
 basic.forever(function () {
     if (toestand == bewegen) {
