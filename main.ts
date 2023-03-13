@@ -15,13 +15,13 @@ let onderDrempel = 1024
 let bovenDrempel = 1048
 let aantalStappen = 0
 basic.forever(function () {
-    berekenVersnelling()
-    serial.writeValue("versnelling", versnelling)
-})
-basic.forever(function () {
-    if (versnelling > bovenDrempel) {
+    if (toestand == stilstaand && versnelling > bovenDrempel) {
         toestand = bewegen
     }
+})
+basic.forever(function () {
+    berekenVersnelling()
+    serial.writeValue("versnelling", versnelling)
 })
 basic.forever(function () {
     basic.showString("" + (aantalStappen))
