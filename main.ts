@@ -18,8 +18,8 @@ let begin = 0
 let aantalStappen = 0
 let stilstaand = 0
 let toestand = stilstaand
-let onderDrempel = 900
-let bovenDrempel = 1200
+let onderDrempel = 1024
+let bovenDrempel = 2048
 aantalStappen = begin
 begin = 0
 basic.forever(function () {
