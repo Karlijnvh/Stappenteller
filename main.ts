@@ -32,7 +32,6 @@ basic.forever(function () {
     if (toestand == stilstaand && versnelling > bovenDrempel) {
         toestand = bewegen
         aantalStappen += 1
-        geluid += 1
         basic.pause(100)
     } else {
         if (toestand == bewegen && versnelling < onderDrempel) {
