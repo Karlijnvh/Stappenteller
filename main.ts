@@ -47,7 +47,7 @@ basic.forever(function () {
         music.startMelody(music.builtInMelody(Melodies.Dadadadum), MelodyOptions.Once)
         basic.pause(100)
         basic.clearScreen()
-        begin = begin + 100
+        begin = begin + 50
         wachteven = begin
     }
 })
