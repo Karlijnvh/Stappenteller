@@ -7,10 +7,8 @@ function berekenVersnelling () {
 input.onButtonPressed(Button.AB, function () {
     begin = 0
     aantalStappen = begin
-    wachteven = begin
     toestand = stilstaand
 })
-let wachteven = 0
 let versnelling = 0
 let z = 0
 let y = 0
@@ -42,21 +40,15 @@ basic.forever(function () {
     serial.writeValue("versnelling", versnelling)
 })
 basic.forever(function () {
-    if (wachteven == begin) {
-        basic.showNumber(aantalStappen)
-        basic.pause(100)
-    } else {
-        basic.pause(100)
-    }
+    basic.showNumber(aantalStappen)
+    basic.pause(100)
 })
 basic.forever(function () {
     if (aantalStappen == begin + 100) {
-        wachteven = wachteven
         basic.showIcon(IconNames.Happy)
         music.startMelody(music.builtInMelody(Melodies.Ringtone), MelodyOptions.Once)
         basic.pause(100)
         basic.clearScreen()
         begin = begin + 100
-        wachteven = begin
     }
 })
