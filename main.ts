@@ -42,7 +42,7 @@ basic.forever(function () {
     serial.writeValue("versnelling", versnelling)
 })
 basic.forever(function () {
-    if (aantalStappen == begin + 100) {
+    if (aantalStappen == begin + 50) {
         wachteven = wachteven
         music.startMelody(music.builtInMelody(Melodies.Dadadadum), MelodyOptions.Once)
         basic.pause(100)
