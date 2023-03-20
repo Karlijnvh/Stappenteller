@@ -5,8 +5,8 @@ function berekenVersnelling () {
     versnelling = Math.floor(Math.sqrt(x ** 2 + y ** 2 + z ** 2))
 }
 input.onButtonPressed(Button.AB, function () {
-    aantalStappen = begin
     begin = 0
+    aantalStappen = begin
     wachteven = begin
 })
 let wachteven = 0
