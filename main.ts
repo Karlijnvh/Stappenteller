@@ -31,7 +31,6 @@ basic.forever(function () {
     } else {
         if (toestand == bewegen && versnelling < onderDrempel) {
             toestand = stilstaand
-            aantalStappen = aantalStappen
         }
     }
 })
