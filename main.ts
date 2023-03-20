@@ -45,16 +45,6 @@ basic.forever(function () {
     serial.writeValue("versnelling", versnelling)
 })
 basic.forever(function () {
-    if (aantalStappen == begin + 50) {
-        wachteven = wachteven
-        music.startMelody(music.builtInMelody(Melodies.Ringtone), MelodyOptions.Once)
-        basic.pause(100)
-        basic.clearScreen()
-        begin = begin + 50
-        wachteven = begin
-    }
-})
-basic.forever(function () {
     if (wachteven == begin) {
         basic.showNumber(aantalStappen)
         basic.pause(100)
@@ -66,6 +56,7 @@ basic.forever(function () {
     if (aantalStappen == begin + 100) {
         wachteven = wachteven
         basic.showIcon(IconNames.Happy)
+        music.startMelody(music.builtInMelody(Melodies.Ringtone), MelodyOptions.Once)
         basic.pause(100)
         basic.clearScreen()
         begin = begin + 100
