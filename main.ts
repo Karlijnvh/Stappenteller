@@ -44,7 +44,7 @@ basic.forever(function () {
 basic.forever(function () {
     if (aantalStappen == begin + 50) {
         wachteven = wachteven
-        music.startMelody(music.builtInMelody(Melodies.Dadadadum), MelodyOptions.Once)
+        music.startMelody(music.builtInMelody(Melodies.Blues), MelodyOptions.Once)
         basic.pause(100)
         basic.clearScreen()
         begin = begin + 50
