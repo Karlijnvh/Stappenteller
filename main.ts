@@ -5,6 +5,7 @@ function berekenVersnelling () {
     versnelling = Math.floor(Math.sqrt(x ** 2 + y ** 2 + z ** 2))
 }
 input.onButtonPressed(Button.AB, function () {
+    geluid = 0
     begin = 0
     aantalStappen = begin
     wachteven = begin
@@ -19,6 +20,8 @@ let begin = 0
 let aantalStappen = 0
 let stilstaand = 0
 let toestand = 0
+let geluid = 0
+geluid = 0
 toestand = stilstaand
 let onderDrempel = 800
 let bovenDrempel = 1400
@@ -29,6 +32,7 @@ basic.forever(function () {
     if (toestand == stilstaand && versnelling > bovenDrempel) {
         toestand = bewegen
         aantalStappen += 1
+        geluid += 1
         basic.pause(100)
     } else {
         if (toestand == bewegen && versnelling < onderDrempel) {
