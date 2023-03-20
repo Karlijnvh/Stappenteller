@@ -46,12 +46,12 @@ basic.forever(function () {
     serial.writeValue("versnelling", versnelling)
 })
 basic.forever(function () {
-    if (aantalStappen == geluid + 50) {
+    if (aantalStappen == begin + 50) {
         wachteven = wachteven
         music.startMelody(music.builtInMelody(Melodies.Ringtone), MelodyOptions.Once)
         basic.pause(100)
         basic.clearScreen()
-        begin = geluid + 50
+        begin = begin + 50
         wachteven = begin
     }
 })
