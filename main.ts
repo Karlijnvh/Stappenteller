@@ -8,6 +8,7 @@ input.onButtonPressed(Button.AB, function () {
     begin = 0
     aantalStappen = begin
     wachteven = begin
+    toestand = stilstaand
 })
 let wachteven = 0
 let versnelling = 0
@@ -17,7 +18,8 @@ let x = 0
 let begin = 0
 let aantalStappen = 0
 let stilstaand = 0
-let toestand = stilstaand
+let toestand = 0
+toestand = stilstaand
 let onderDrempel = 800
 let bovenDrempel = 1400
 aantalStappen = begin
