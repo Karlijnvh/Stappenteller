@@ -40,13 +40,13 @@ basic.forever(function () {
     serial.writeValue("versnelling", versnelling)
 })
 basic.forever(function () {
-    if (aantalStappen == begin + 100) {
+    if (aantalStappen == begin + 50) {
         wachteven = wachteven
-        basic.showIcon(IconNames.Happy)
+        music.startMelody(music.builtInMelody(Melodies.Dadadadum), MelodyOptions.Once)
         basic.pause(100)
-        basic.clearScreen()
         begin = begin + 100
         wachteven = begin
+        basic.clearScreen()
     }
 })
 basic.forever(function () {
@@ -55,5 +55,15 @@ basic.forever(function () {
         basic.pause(100)
     } else {
         basic.pause(100)
+    }
+})
+basic.forever(function () {
+    if (aantalStappen == begin + 100) {
+        wachteven = wachteven
+        basic.showIcon(IconNames.Happy)
+        basic.pause(100)
+        begin = begin + 100
+        wachteven = begin
+        basic.clearScreen()
     }
 })
